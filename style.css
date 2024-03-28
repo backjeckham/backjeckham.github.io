@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pictures/nlbackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: auto; /* Set the width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px; /* Adjust the top padding to create space for the navbar and logo */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.double-image {
+    text-align: center; /* Center the contents horizontally */
+    margin-bottom: 10px; /* Add some margin at the bottom */
+    margin-top: 70px;
+}
+.double-image img {
+    width: 650px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust the bottom images layout */
+.bottom-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap; /* Wrap items to the next line if they don't fit */
+    margin-top: 5px; /* Pushes the images to the bottom */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+}
+.bottom-images img {
+    width: 100px;
+    margin: 5px;
+}
+.film-content{
+    margin-left: 20px;
+    color: #fff;
+}
+.image8 img{
+    width: auto;
+    height: 400px;
+}
